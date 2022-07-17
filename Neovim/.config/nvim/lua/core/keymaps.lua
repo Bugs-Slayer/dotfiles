@@ -24,13 +24,22 @@ vim.g.maplocalleader = " "
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<C-w>", "<cmd>Bdelete!<CR>", opts)
+keymap("n", "<leader>1", "<cmd>BufferLineGoToBuffer 1<CR>", opts)
+keymap("n", "<leader>2", "<cmd>BufferLineGoToBuffer 2<CR>", opts)
+keymap("n", "<leader>3", "<cmd>BufferLineGoToBuffer 3<CR>", opts)
+keymap("n", "<leader>4", "<cmd>BufferLineGoToBuffer 4<CR>", opts)
+keymap("n", "<leader>5", "<cmd>BufferLineGoToBuffer 5<CR>", opts)
+keymap("n", "<leader>6", "<cmd>BufferLineGoToBuffer 6<CR>", opts)
+keymap("n", "<leader>7", "<cmd>BufferLineGoToBuffer 7<CR>", opts)
+keymap("n", "<leader>8", "<cmd>BufferLineGoToBuffer 8<CR>", opts)
+keymap("n", "<leader>9", "<cmd>BufferLineGoToBuffer 9<CR>", opts)
 
 -- Move text up and down
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
 -- Insert --
--- -- Press jk/JK or kj/KJ fast to enter
+-- -- Press jk/JK fast to enter
 keymap("i", "jk", "<ESC>", opts)
 keymap("i", "JK", "<ESC>", opts)
 
