@@ -1,6 +1,22 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": 
+    [
+        { "command": "find", "keys": "ctrl+shift+f"},
+        { "command": { "action": "copy", "singleLine": false }, "keys": "ctrl+c"},
+        { "command": "paste", "keys": "ctrl+v" },
+        // My favourite layout
+        {
+            "command": 
+            {
+                "action": "wt",
+                "commandline": "split-pane -p \"Ubuntu 20.04\" -s .2 -H -D; split-pane -s .5 -V -D; move-focus up"
+            },
+            "keys": "ctrl+e",
+            "name": "<Editor Layout/>"
+        }
+    ],
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
